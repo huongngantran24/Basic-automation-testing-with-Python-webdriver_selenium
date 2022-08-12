@@ -27,6 +27,9 @@ chon.select_by_visible_text('Togo')
 chon.select_by_value('TG')
 time.sleep(2)
 
+#radio_btt= driver.find_element(By.CSS_SELECTOR,"input[value='roundtrip'")
+#print("status of round trip radio button", radio_btt.is_selected()) #print status of radio button
+
 
 select_ele=driver.find_element(By.NAME,"i_agree_check").click() #checkbox
 
