@@ -1,11 +1,10 @@
 import time
-
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
 driver=webdriver.Chrome(executable_path="C:\Drivers\chromedriver.exe")
-
+#driver.maximize_window()
 driver.get("https://dangnhap.thanhhoa.gov.vn/login")
+#driver.implicitly_wait(10)
 
 user_ele=driver.find_element("xpath","//*[@id='username']")
 print(user_ele.is_displayed()) #return true/false based of element status
